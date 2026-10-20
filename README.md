@@ -1,26 +1,25 @@
 # 📚 Student Task Management System
 
-Ky projekt është zhvilluar si pjesë e kursit universitar dhe ka për qëllim
-menaxhimin e detyrave për studentë dhe profesorë.
+This project was developed as part of a university course and is designed to manage tasks for students and teachers.
 
-Aplikacioni ofron funksionalitete CRUD dhe komunikon me një REST API të ndërtuar në backend.
-
----
-
-## 🚀 Funksionalitetet kryesore
-
-- Autentikim (Login / Signup) me JWT
-- Role: Student & Teacher
-- Shtim i detyrave (Create)
-- Lexim i detyrave (Read)
-- Përditësim i detyrave (Update)
-- Fshirje e detyrave (Delete)
-- Ruajtje e token-it në LocalStorage
-- Komunikim Frontend ↔ Backend përmes API
+The application provides CRUD functionality and communicates with a REST API built on the backend.
 
 ---
 
-## 🧑‍💻 Teknologjitë e përdorura
+## 🚀 Key Features
+
+- Authentication (Login / Signup) using JWT
+- User roles: Student & Teacher
+- Create tasks
+- Read and view tasks
+- Update tasks
+- Delete tasks
+- Store authentication tokens in LocalStorage
+- Frontend ↔ Backend communication through an API
+
+---
+
+## 🧑‍💻 Technologies Used
 
 ### Frontend
 - React
@@ -38,9 +37,9 @@ Aplikacioni ofron funksionalitete CRUD dhe komunikon me një REST API të ndërt
 
 ## 🔌 REST API
 
-Projekti përdor REST API për komunikim mes frontend dhe backend.
+The project uses a REST API to enable communication between the frontend and backend.
 
-### Auth API
+### Authentication API
 - `POST /api/auth/signup`
 - `POST /api/auth/login`
 - `GET /api/auth/me`
@@ -53,16 +52,17 @@ Projekti përdor REST API për komunikim mes frontend dhe backend.
 
 ---
 
-## 🧠 Përdorimi i TypeScript
+## 🧠 Use of TypeScript
 
-TypeScript është përdorur për:
-- Tipizimin e të dhënave (`interface User`, `Task`, `AuthResponse`)
-- Siguri gjatë komunikimit me API
-- Parandalimin e gabimeve gjatë zhvillimit
+TypeScript is used for:
+
+- Type definitions for data structures (`interface User`, `Task`, `AuthResponse`)
+- Type safety when communicating with the API
+- Reducing errors during development
 
 ---
 
-## 📂 Struktura e projektit
+## 📂 Project Structure
 
 ```bash
 src/
@@ -73,13 +73,22 @@ src/
  ├── pages/
  ├── App.tsx
  └── main.tsx
+```
 
-Si ekzekutohet projekti Frontend
+---
+
+## ⚙️ How to Run the Project
+
+### Frontend
+
+```bash
 npm install
 npm run dev
+```
 
-Si ekzekutohet projekti Backend
+### Backend
+
+```bash
 npm install
 npm start
-
-
+```
